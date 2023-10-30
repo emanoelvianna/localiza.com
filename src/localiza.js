@@ -1,7 +1,8 @@
 var carro;
 
 function criarCarro() {
-    carro = new Carro("ABC123"); // TODO: COMO PEGAR O VALOR QUE O USUARIO ME INFORMA NO INPUT
+    let placa = document.getElementById("placa-carro");
+    carro = new Carro(placa.value);
     console.log(carro);
 }
 

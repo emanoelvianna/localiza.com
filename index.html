@@ -5,15 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="src/style.css">
 </head>
 
 <body>
-    <h1>Olá mundo</h1>
-    <form action="#">
-        <label for="placa">Informe a Placa do Carro:</label>
-        <input type="text">
+    <h1>Localiza</h1>
+    <form action="#" id="form">
+        <label for="placa">Informe a placa do carro:</label>
+        <input type="text" id="placa-carro">
+        <br/>
+        <label for="ano">Informe a ano do carro:</label>
+        <input type="number" id="ano-carro">
+        <br/>
         <button onclick="criarCarro()">Enviar</button>
     </form>
+    <hr/>
     <button onclick="apresentarCarros()">Apresentar</button>
     <script src="src/carro-model.js"></script>
     <script src="src/localiza.js"></script>
