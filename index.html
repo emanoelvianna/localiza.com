@@ -9,17 +9,42 @@
 </head>
 
 <body>
-    <h1>Localiza</h1>
-    <form action="#" id="form">
-        <label for="placa">Informe a placa do carro:</label>
+    <form action="#" id="form-cadastro-carro">
+        <h1>Formulário de cadastro de carros</h1>
+        <label for="placa">Placa:</label>
         <input type="text" id="placa-carro">
-        <br/>
-        <label for="ano">Informe a ano do carro:</label>
+        <br />
+        <label for="ano">Ano:</label>
         <input type="number" id="ano-carro">
-        <br/>
-        <button onclick="criarCarro()">Enviar</button>
+        <br />
+        <label for="cor">Cor:</label>
+        <input type="text" id="cor-carro">
+        <br />
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo-carro">
+        <br />
+        <label for="quilometragem">Quilometragem:</label>
+        <input type="text" id="quilometragem-carro">
+        <br />
+        <label for="vDiaria">Valor da diaria:</label>
+        <input type="text" id="vDiaria-carro">
+        <br />
+        <label for="observacao">Observação:</label>
+        <textarea name="" id="observacao-carro" cols="30" rows="1"></textarea>
+        <br /><br />
+        <button onclick="criarCarro()" id="cadastrar-carro">Enviar</button>
     </form>
-    <hr/>
+    <hr />
+
+    <table id="lista-carros-cadastrados">
+        <tr>
+            <td>Placa</td>
+            <td>Modelo</td>
+            <td>Ano</td>
+        </tr>
+    </table>
+    <br />
+
     <button onclick="apresentarCarros()">Apresentar</button>
     <script src="src/carro-model.js"></script>
     <script src="src/localiza.js"></script>

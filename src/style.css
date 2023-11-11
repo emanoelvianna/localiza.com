@@ -1,0 +1,12 @@
+form {
+    border-style: solid;
+    border-width: 1px;
+}
+
+#cadastrar-carro {
+    width: 100px;
+}
+
+table, tr, td {
+    border: 1px solid black;
+} 
